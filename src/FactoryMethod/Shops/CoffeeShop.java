@@ -1,9 +1,7 @@
 package FactoryMethod.Shops;
 
 
-
-import FactoryMethod.Coffee.Coffee;
-import FactoryMethod.Coffee.CoffeeType;
+import FactoryMethod.Coffee.*;
 
 import java.util.Random;
 

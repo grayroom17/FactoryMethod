@@ -1,9 +1,8 @@
 package FactoryMethod.Shops;
 
 
-import FactoryMethod.Coffee.Coffee;
-import FactoryMethod.Coffee.CoffeeType;
-import FactoryMethod.Factory.AmericanFactory;
+import FactoryMethod.Coffee.*;
+import FactoryMethod.Factory.*;
 
 public class AmericanCoffeeShop extends CoffeeShop {
 
