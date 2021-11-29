@@ -2,18 +2,27 @@ package FactoryMethod.Shops;
 
 
 import FactoryMethod.Coffee.*;
-import FactoryMethod.Factory.*;
 
 public class AmericanCoffeeShop extends CoffeeShop {
 
-    private AmericanFactory factory;
-
-    public AmericanCoffeeShop() {
-        this.factory = new AmericanFactory();
-    }
-
     @Override
     protected Coffee createCoffee(CoffeeType coffeeType) {
-        return factory.createCoffee(coffeeType);
+
+        Coffee coffee = null;
+
+        switch (coffeeType) {
+            case AMERICANO:
+                coffee = new AmericanAmericano();
+                break;
+            case ESPRESSO:
+                coffee = new AmericanEspresso();
+                break;
+            case MOCHA:
+                coffee = new AmericanMocha();
+                break;
+        }
+
+        return coffee;
+
     }
 }

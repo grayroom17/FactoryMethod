@@ -6,9 +6,9 @@ import FactoryMethod.Shops.*;
 
 public class Example {
     public static void main(String[] args) throws InterruptedException {
-        AmericanCoffeeShop americanCoffeeShop = new AmericanCoffeeShop();
-        ItalianCoffeeShop italianCoffeeShop = new ItalianCoffeeShop();
-        IndianCoffeeShop indianCoffeeShop = new IndianCoffeeShop();
+        CoffeeShop americanCoffeeShop = new AmericanCoffeeShop();
+        CoffeeShop italianCoffeeShop = new ItalianCoffeeShop();
+        CoffeeShop indianCoffeeShop = new IndianCoffeeShop();
 
         americanCoffeeShop.start();
         italianCoffeeShop.start();
